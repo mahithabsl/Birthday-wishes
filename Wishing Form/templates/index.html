@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Himaja's bday</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{url_for('static',filename='images/icons/birthday-girl.png')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/animate/animate.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/select2/select2.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='css/util.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <div class="bg-contact100" style="background-image: url(images/infy.JPG);">
+      <div class="container-contact100">
+        <div class="wrap-contact100 class=" col-sm-6>
+          <div
+            class="col-sm-6"
+            data-tilt
+            style="
+              max-width: fit-content;
+              max-height: 100%;
+              margin-bottom: 30px;
+            "
+          >
+            <img
+              src="{{url_for('static',filename='images/black.jpg')}}"
+              alt="Birthday girl"
+              style="max-width: 100%;"
+            />
+          </div>
+
+          <div class="col-sm-6" style="max-width: 100%;">
+            <form class="" method="POST" action="{{ url_for('register') }}">
+              <span class="contact100-form-title">
+                It's Himaja's bday
+                <img
+                  src="{{url_for('static',filename='images/balloons.svg')}}"
+                  alt=""
+                  width="39px"
+                  height="70px"
+                />
+                <br />
+                <span style="font-size: 15px;">
+                  So, I'm planning a small surprise for her
+                  <img
+                    src="{{url_for('static',filename='images/gift-box.svg')}}"
+                    alt=""
+                    width="40px"
+                    height="30px"
+                  />
+                  <br />Do answer the following questions..!</span
+                >
+              </span>
+
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Name is required"
+              >
+                <input
+                  class="input100"
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                />
+
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </span>
+              </div>
+              <br />
+
+              <span class="contact100-form-questions">
+                Your first meet with Himaja?
+                <img
+                  src="{{url_for('static',filename='/images/meeting.svg')}}"
+                  alt=""
+                  width="30px"
+                  height="35px"
+                />
+              </span>
+
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Message is required"
+              >
+                <textarea
+                  class="input100"
+                  name="meet"
+                  placeholder="first meet"
+                ></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <br />
+
+              <span class="contact100-form-questions">
+                Things u like about Himaja ?
+                <img
+                  src="{{url_for('static',filename='/images/recommend.svg')}}"
+                  alt=""
+                  width="35px"
+                  height="30px"
+                />
+              </span>
+
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Message is required"
+              >
+                <textarea
+                  class="input100"
+                  name="like"
+                  placeholder="best qualities"
+                ></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <br />
+              <span class="contact100-form-questions">
+                Your favourite memory with Himaja?
+                <img
+                  src="{{url_for('static',filename='/images/selfie.svg')}}"
+                  alt=""
+                  width="40px"
+                  height="40px"
+                />
+              </span>
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Message is required"
+              >
+                <textarea
+                  class="input100"
+                  name="memory"
+                  placeholder="fav memory"
+                ></textarea>
+                <span class="focus-input100"></span>
+              </div>
+              <br />
+
+              <span class="contact100-form-questions">
+                Message for Himaja on her birthday?
+                <img
+                  src="{{url_for('static',filename='/images/message.svg')}}"
+                  alt=""
+                  width="40px"
+                  height="40px"
+                />
+              </span>
+              <div
+                class="wrap-input100 validate-input"
+                data-validate="Message is required"
+              >
+                <textarea
+                  class="input100"
+                  name="message"
+                  placeholder="bday message"
+                ></textarea>
+                <span class="focus-input100"></span>
+              </div>
+
+              <div class="container-contact12-form-btn">
+                <button type="submit" class="contact12-form-btn">
+                  <span>
+                    <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+                    Send
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--===============================================================================================-->
+    <script src="{{url_for('static',filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static',filename='vendor/bootstrap/js/popper.js')}}"></script>
+    <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static',filename='vendor/select2/select2.min.js')}}"></script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static',filename='vendor/tilt/tilt.jquery.min.js')}}"></script>
+    <script>
+      $('.js-tilt').tilt({
+        scale: 1.1,
+      });
+    </script>
+    <!--===============================================================================================-->
+    <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script> -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23581568-13');
+    </script>
+  </body>
+</html>

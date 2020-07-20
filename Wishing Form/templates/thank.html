@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himaja's bday</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{url_for('static',filename='images/icons/birthday-girl.png')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/animate/animate.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/css-hamburgers/hamburgers.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='vendor/select2/select2.min.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='css/util.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{url_for('static',filename='css/main.css')}}"
+    />
+  </head>
+  <body>
+    <div class="bg-contact100">
+      <div class="container-contact100">
+        <div class="wrap-contact100 class=" col-sm-6>
+          <div class="col-sm-6" data-tilt>
+            <img
+              src="{{url_for('static',filename='images/img-01.png')}}"
+              alt="Birthday girl"
+              style="max-width: 100%;"
+            />
+          </div>
+
+          <div class="col-sm-6">
+            <span class="contact100-form-title">
+              <br />
+              <br />
+              <center>
+                Thank u for taking the time to write the answers ❤️
+              </center>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--===============================================================================================-->
+  <script src="{{url_for('static',filename='vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+  <!--===============================================================================================-->
+  <script src="{{url_for('static',filename='vendor/bootstrap/js/popper.js')}}"></script>
+  <script src="{{url_for('static',filename='vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+  <!--===============================================================================================-->
+  <script src="{{url_for('static',filename='vendor/select2/select2.min.js')}}"></script>
+  <!--===============================================================================================-->
+  <script src="{{url_for('static',filename='vendor/tilt/tilt.jquery.min.js')}}"></script>
+  <script>
+    $('.js-tilt').tilt({
+      scale: 1.1,
+    });
+  </script>
+  <!--===============================================================================================-->
+  <script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+  ></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+</html>
