@@ -2,7 +2,7 @@
 
 This is a personal website that I made for my Sister as a gift on her birthday🎁
 
-View the website here : http://himajasbday.herokuapp.com/
+View the wishing form here : http://himajasbday.herokuapp.com/
 
 Made with ❤️ using
 
