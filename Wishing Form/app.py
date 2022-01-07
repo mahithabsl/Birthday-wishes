@@ -8,7 +8,7 @@ from bson import json_util
 
 app=Flask(__name__)
 
-cluster = MongoClient("mongodb+srv://root:root@test-6janc.gcp.mongodb.net/test?retryWrites=true&w=majority")
+cluster = MongoClient("mongodb+srv://---")
 db = cluster["bday"]
 collection = db["responses"]
 
